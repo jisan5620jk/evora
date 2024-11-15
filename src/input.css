@@ -1,0 +1,118 @@
+/* Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container-1200 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-1300 {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Product Slider */
+
+.image-slide img {
+  width: 100%;
+}
+
+.image-slide-btn img {
+  max-width: 106px !important;
+  width: 100%;
+  cursor: pointer;
+}
+
+.slick-active.slick-current.image-slide-btn img {
+  border: 1px solid black;
+}
+
+span.slick-next {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+span.slick-prev {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 20px 0 0;
+}
+
+span.slick-prev i,
+span.slick-next i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #2b2b2b;
+  background: white;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Product Tab */
+
+.tab-btn.active {
+  border-color: #f6cbb7;
+  background: #fef9f6;
+}
+
+.tab-btn.active img {
+  opacity: 0;
+}
+
+.tab-content.active {
+  height: auto;
+  z-index: 10;
+}
+
+
+/* Product Dropdown */
+
+
+
+
+
+
+.product-dropdown-btn.active i {
+  border-color: #0c6e6d;
+  transform: rotate(180deg);
+}
+
+.product-dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
